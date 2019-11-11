@@ -1,0 +1,31 @@
+/**
+ *
+ * 公共样式
+ *
+ * @author chenfan
+ * @version 1.0, 2017/03/21
+ *
+ */
+
+/* --- 字体 --- */
+*, body, .vcard .email, .ym-form select, .ym-form optgroup, textarea, pre, code, kbd, samp, var, tt, body, h1, h2, h3, h4, h5, h6, blockquote, cite, q, 
+.label, button { font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif; }
+
+
+/* --- 宽度 --- */
+/* body { min-width: 1024px; } */
+.ym-wrapper { max-width: 100%; }
+
+/* --- 弹框 --- */
+#jpopup_wrapper { position: fixed; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden; z-index: 9998; background-color: #666; opacity: .9; filter: alpha(opacity=90); }
+#jpopup_box { position: fixed; left: 50%; top: 50%; margin: 0; padding: 0; max-width: 960px; max-height: 720px; overflow: hidden; z-index: 9999; -webkit-box-shadow: 0 0 4px #dddddd; box-shadow: 0 0 4px #dddddd; border-radius: 0.2em; }
+#jpopup_box .ym-form { margin: 0; padding: 0; max-width: 960px; max-height: 720px; overflow: auto; border-radius: 0.2em; }
+
+/* 导航高亮 */
+.ym-vlist ul li ul li.active a { color: #fff; background-color: #444; }
+
+/* 表格列头 */
+.tbheader, .tbheader td, .tbheader th, .tbheader:hover, .tbheader:hover td, .tbheader:hover th { background-color: #ececec; }
+
+/* 分页 */
+#showpager a { margin-right: 10px; }

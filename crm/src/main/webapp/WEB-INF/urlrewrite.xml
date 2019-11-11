@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN" "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+
+	<rule>
+		<note>首页</note>
+		<from>^/$</from>
+		<to type="redirect">/product/list</to>
+	</rule>
+	
+	<rule>
+		<note>登录页面</note>
+		<from>^/signin$</from>
+		<to type="forward">/views/console/user_signin.jsp</to>
+	</rule>
+
+	<rule>
+		<note>登录方法</note>
+		<from>^/user/signin$</from>
+		<to type="forward">/user?method=signin</to>
+	</rule>
+
+	<rule>
+		<note>登出</note>
+		<from>^/user/signout$</from>
+		<to type="forward">/user?method=signout</to>
+	</rule>
+	
+	<rule>
+		<note>错误页面</note>
+		<from>^/error/page$</from>
+		<to type="forward">/views/console/error_page.jsp</to>
+	</rule>
+	
+	<rule>
+		<note>用户列表</note>
+		<from>^/user/list$</from>
+		<to type="forward">/user?method=list</to>
+	</rule>
+
+	<rule>
+		<note>新建用户</note>
+		<from>^/user/new$</from>
+		<to type="forward">/views/user_edit.jsp</to>
+	</rule>
+
+	<rule>
+		<note>编辑用户</note>
+		<from>^/user/edit$</from>
+		<set type="request" name="editId">%{parameter:id}</set>
+		<to type="forward">/views/user_edit.jsp</to>
+	</rule>
+
+	<rule>
+		<note>加载用户</note>
+		<from>^/user/load$</from>
+		<to type="forward">/user?method=load</to>
+	</rule>
+
+	<rule>
+		<note>保存用户</note>
+		<from>^/user/save$</from>
+		<to type="forward">/user?method=save</to>
+	</rule>
+
+	<rule>
+		<note>删除用户</note>
+		<from>^/user/delete$</from>
+		<to type="forward">/user?method=delete</to>
+	</rule>
+	
+	<rule>
+		<note>用户列表</note>
+		<from>^/product/list$</from>
+		<to type="forward">/product?method=list</to>
+	</rule>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</urlrewrite>
+
